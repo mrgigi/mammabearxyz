@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Vercel local project link directory (created by CLI)
+.vercel/
+
+# Node (if used later)
+node_modules/

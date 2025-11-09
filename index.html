@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>mammabear — Hug The Dip</title>
+    <meta name="description" content="$MAMABEAR — The most comforting meme on Solana. Mamma Bear hugs you through bear markets. #HugTheDip #MamaSaidHODL #MammaBearOnSol" />
+    <meta property="og:title" content="mammabear — Hug The Dip" />
+    <meta property="og:description" content="$MAMABEAR — The most comforting meme on Solana." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/logo.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#hero" class="brand">
+          <img id="site-logo" src="/assets/logo.png" alt="mammabear logo" />
+          <span class="brand-text">mammabear</span>
+        </a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#tokenomics">Tokenomics</a>
+          <a href="#cuddlemap">Cuddlemap</a>
+          <a href="#join">Join</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 class="gradient-text">Hug the Dip — Mamma’s Got You 🧸💗</h1>
+            <p class="subhead">$MAMMABEAR — The most comforting meme on Solana.</p>
+            <div class="cta">
+              <a class="btn primary" href="#" data-coming-soon="true" title="Dex link coming soon">Buy $MAMMABEAR</a>
+              <a class="btn outline" href="#join">Join the Family</a>
+            </div>
+            <ul class="hashtags">
+              <li>#HugTheDip</li>
+              <li>#MamaSaidHODL</li>
+              <li>#MammaBearOnSol</li>
+            </ul>
+          </div>
+          <div class="hero-art">
+            <!-- Prefer PNG if available; fall back to SVG automatically -->
+            <picture class="hero-picture">
+              <source srcset="/assets/logo.png" type="image/png" />
+              <img class="hero-logo" src="/assets/logo.svg" alt="mammabear" />
+            </picture>
+            <div class="badge-fallback" aria-hidden="true">
+              <span>🧸</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section about">
+        <div class="container narrow">
+          <h2 class="section-title">About</h2>
+          <p class="about-story">
+            In a market full of fear, Mamma Bear showed up — not to roar, but to hug.
+            She’s here to protect her cubs (that’s you) from paper hands, FUD, and bad vibes.
+            $MAMABEAR is the meme that reminds crypto: stay cozy, stay strong.
+          </p>
+        </div>
+      </section>
+
+      <!-- Tokenomics Section -->
+      <section id="tokenomics" class="section tokenomics">
+        <div class="container narrow">
+          <h2 class="section-title">Tokenomics</h2>
+          <ul class="tok-list">
+            <li><strong>Total Supply:</strong> 1,000,000,000 $MAMABEAR</li>
+            <li>No taxes. No presale. Just vibes.</li>
+            <li>Liquidity locked forever.</li>
+            <li>100% community-owned.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Cuddlemap (Roadmap) -->
+      <section id="cuddlemap" class="section cuddlemap">
+        <div class="container">
+          <h2 class="section-title">The Cuddlemap</h2>
+          <div class="phase-grid">
+            <article class="phase">
+              <div class="phase-icon">🍼</div>
+              <h3 class="phase-title">The Birth</h3>
+              <p>Launch $MAMMABEAR on Solana, list on DexScreener.</p>
+            </article>
+            <article class="phase">
+              <div class="phase-icon">🧸</div>
+              <h3 class="phase-title">Family Time</h3>
+              <p>Grow the community on X and Telegram.</p>
+            </article>
+            <article class="phase">
+              <div class="phase-icon">🐾</div>
+              <h3 class="phase-title">Cozy Merch</h3>
+              <p>Release cute $MAMMABEAR merch and stickers.</p>
+            </article>
+            <article class="phase">
+              <div class="phase-icon">🌕</div>
+              <h3 class="phase-title">Hug to the Moon</h3>
+              <p>Expand listings and start collabs.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join the Family -->
+      <section id="join" class="section join">
+        <div class="container narrow">
+          <h2 class="section-title">Join the Family</h2>
+          <div class="link-grid">
+            <a class="link-card" href="https://x.com/mammabear_meme?s=21" target="_blank" rel="noopener">Twitter / X</a>
+            <a class="link-card" href="https://t.me/mammabearxyz" target="_blank" rel="noopener">Telegram</a>
+            <a class="link-card disabled" href="#" title="Dex link coming soon">Dex link</a>
+            <button class="link-card copy-addr" id="copy-contract">Copy Solana contract (coming soon)</button>
+          </div>
+          <p class="tagline">Every cub deserves a bear market hug. Join the $MAMMABEAR family. 🧸💗</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container narrow">
+        <p class="footnote">$MAMMABEAR is a meme coin. No promises, just hugs.</p>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="/script.js"></script>
+  </body>
+  </html>
