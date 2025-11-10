@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const badgeFallback = document.querySelector('.badge-fallback');
   const backToTop = document.getElementById('backToTop');
   const copyBtn = document.getElementById('copy-contract');
+  const navToggle = document.getElementById('navToggle');
+  const siteNav = document.getElementById('siteNav');
 
   // Coming soon behavior for Buy button
   if (buyBtn) {
@@ -44,6 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
         toast('Copy failed — will add once live.');
       }
     });
+  }
+
+  // Mobile navigation toggle
+  if (navToggle && siteNav) {
+    navToggle.addEventListener('click', () => siteNav.classList.toggle('open'));
+    siteNav.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => siteNav.classList.remove('open')));
   }
 
   // Back to top visibility and smooth scroll
