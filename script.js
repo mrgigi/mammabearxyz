@@ -50,7 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Mobile navigation toggle
   if (navToggle && siteNav) {
-    navToggle.addEventListener('click', () => siteNav.classList.toggle('open'));
+    navToggle.addEventListener('click', () => {
+      const isOpen = siteNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
     siteNav.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => siteNav.classList.remove('open')));
   }
 
